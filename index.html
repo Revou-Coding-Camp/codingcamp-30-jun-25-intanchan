@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Form Belajar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <h1>Form Belajar</h1>
+  <p>Ini adalah website latihan pertama</p>
+
+  <form id="form">
+    <label>Nama :</label><br />
+    <input type="text" id="nama" placeholder="Nama" required /><br />
+
+    <label>Tanggal Lahir :</label><br />
+    <input type="date" id="tanggal" required /><br />
+
+    <label>Jenis Kelamin :</label><br />
+    <input type="radio" name="jk" value="Laki-Laki" checked /> Laki-Laki
+    <input type="radio" name="jk" value="Perempuan" /> Perempuan<br />
+
+    <label>Pesan :</label><br />
+    <textarea id="pesan" placeholder="Pesan"></textarea><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Tanggal Lahir</th>
+        <th>Jenis Kelamin</th>
+        <th>Pesan</th>
+        <th>Profile</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Data masuk sini -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
 </body>
 </html>
